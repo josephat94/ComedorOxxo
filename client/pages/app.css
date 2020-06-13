@@ -1,0 +1,54 @@
+.drag-drop-files__ctn {
+  background: #efefef;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.4s;
+  text-align: center;
+  padding: 0px 25px;
+}
+
+.drag-drop-files__ctn:hover {
+  transform: scale(1.1);
+}
+
+.drag-drop-files__ctn:focus {
+  outline: none;
+}
+
+.actions__ctn {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  animation: appear 0.4s;
+}
+.actions__ctn button {
+  width: 260px;
+}
+.linked-active {
+  font-weight: bold;
+}
+.linked-item:hover {
+  text-decoration: none;
+  color: #efefef;
+  margin-left: 20px;
+}
+.linked-item {
+  text-decoration: none;
+  color: #efefef;
+  margin-left: 20px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
